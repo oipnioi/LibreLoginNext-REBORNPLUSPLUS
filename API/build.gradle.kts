@@ -1,6 +1,5 @@
 plugins {
     id("java-library")
-    id("maven-publish")
     id("java")
 }
 
@@ -29,26 +28,4 @@ tasks.withType<JavaCompile> {
 java {
     withSourcesJar()
     withJavadocJar()
-}
-
-publishing {
-    repositories {
-        maven {
-            name = "kyngsRepo"
-            url = uri(
-                "https://repo.kyngs.xyz/" + (if (project.version.toString()
-                        .contains("SNAPSHOT")
-                ) "snapshots" else "releases") + "/"
-            )
-            credentials(PasswordCredentials::class)
-            authentication {
-                create<BasicAuthentication>("basic")
-            }
-        }
-    }
-    publications {
-        create<MavenPublication>("maven") {
-            from(components["java"])
-        }
-    }
 }
