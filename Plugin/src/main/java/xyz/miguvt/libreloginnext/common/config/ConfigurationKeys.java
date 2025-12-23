@@ -259,7 +259,6 @@ public class ConfigurationKeys {
             "totp",
             """
                     This section is used for 2FA configuration.
-                    !! YOU MUST HAVE PACKETEVENTS INSTALLED FOR THIS TO WORK !!
                     
                     You can find more information on the wiki: https://github.com/MiguVerse/LibreLoginNext/wiki/2FA
                     """
@@ -393,6 +392,15 @@ public class ConfigurationKeys {
             """
                     !!!THIS ONLY AFFECTS PAPER!!!
                     Verifies whether the IP the players had used when authenticating to Mojang matches the IP they are connecting from. Disabling this may break LibreLoginNext if the server is running under a reverse proxy/VPN.
+                    """,
+            ConfigurateHelper::getBoolean
+    );
+    public static final ConfigurationKey<Boolean> ALLOW_SAME_LIMBO_LOBBY = new ConfigurationKey<>(
+            "allow-same-limbo-lobby",
+            false,
+            """
+                    !!!ONLY MODIFY THIS IF YOU KNOW WHAT YOU ARE DOING!!!
+                    Allows having the same lobby server/world as a limbo server/world. If you don't know what this means, enabling this can make your server insecure.
                     """,
             ConfigurateHelper::getBoolean
     );
