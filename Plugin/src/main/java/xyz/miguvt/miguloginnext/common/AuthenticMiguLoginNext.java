@@ -240,7 +240,7 @@ public abstract class AuthenticMiguLoginNext<P, S> implements MiguLoginNextPlugi
         var folder = getDataFolder();
         var migratedFromOldPlugin = false;
 
-        var oldFolderNames = new String[]{"librelogin", "librepremium", "LibrePremium", "LibreLoginNext"};
+        var oldFolderNames = new String[]{"libreloginnext", "librelogin", "librepremium", "LibrePremium"};
 
         for (String oldName : oldFolderNames) {
             var oldFolder = new File(folder.getParentFile(), oldName);
