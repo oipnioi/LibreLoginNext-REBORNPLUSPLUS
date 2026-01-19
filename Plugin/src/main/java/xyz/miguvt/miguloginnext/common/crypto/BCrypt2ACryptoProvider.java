@@ -11,7 +11,7 @@ import xyz.miguvt.miguloginnext.common.util.CryptoUtil;
 import xyz.miguvt.miguloginnext.api.crypto.CryptoProvider;
 import xyz.miguvt.miguloginnext.api.crypto.HashedPassword;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 
 public class BCrypt2ACryptoProvider implements CryptoProvider {
 

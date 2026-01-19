@@ -66,6 +66,31 @@ public class NanoLimboConfig implements LimboConfig {
     }
 
     @Override
+    public boolean isUseTrafficLimits() {
+        return false;
+    }
+
+    @Override
+    public int getMaxPacketSize() {
+        return -1;
+    }
+
+    @Override
+    public double getMaxPacketRate() {
+        return -1.0;
+    }
+
+    @Override
+    public double getInterval() {
+        return -1.0;
+    }
+
+    @Override
+    public boolean isSecureProfile() {
+        return false; // Disable secure profile/chat signatures
+    }
+
+    @Override
     public int getDebugLevel() {
         return 0; // Display only errors
     }

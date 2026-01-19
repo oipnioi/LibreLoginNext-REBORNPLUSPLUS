@@ -11,7 +11,7 @@ import java.io.InputStream;
 import java.sql.Timestamp;
 import java.util.Map;
 import java.util.UUID;
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 
 import xyz.miguvt.miguloginnext.api.authorization.AuthorizationProvider;
 import xyz.miguvt.miguloginnext.api.configuration.Messages;

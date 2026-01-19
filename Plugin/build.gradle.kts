@@ -2,7 +2,7 @@ import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 
 plugins {
     id("java")
-    id("com.gradleup.shadow") version "9.3.0"
+    id("com.gradleup.shadow") version "9.3.1"
     id("net.kyori.blossom").version("2.2.0")
     id("java-library")
     id("xyz.miguvt.libby.plugin").version("1.2.3")
@@ -129,13 +129,13 @@ libby {
 configurations.all {
     // I hate this, but it needs to be done as bungeecord does not support newer versions of adventure, and packetevents includes it
     resolutionStrategy {
-        force("net.kyori:adventure-text-minimessage:4.25.0")
-        force("net.kyori:adventure-text-serializer-gson:4.25.0")
-        force("net.kyori:adventure-text-serializer-legacy:4.25.0")
-        force("net.kyori:adventure-text-serializer-json:4.25.0")
-        force("net.kyori:adventure-api:4.25.0")
-        force("net.kyori:adventure-nbt:4.25.0")
-        force("net.kyori:adventure-key:4.25.0")
+        force("net.kyori:adventure-text-minimessage:4.26.1")
+        force("net.kyori:adventure-text-serializer-gson:4.26.1")
+        force("net.kyori:adventure-text-serializer-legacy:4.26.1")
+        force("net.kyori:adventure-text-serializer-json:4.26.1")
+        force("net.kyori:adventure-api:4.26.1")
+        force("net.kyori:adventure-nbt:4.26.1")
+        force("net.kyori:adventure-key:4.26.1")
     }
 }
 
@@ -146,7 +146,7 @@ dependencies {
     //Velocity
     annotationProcessor("com.velocitypowered:velocity-api:3.4.0-SNAPSHOT")
     compileOnly("com.velocitypowered:velocity-api:3.4.0-SNAPSHOT")
-    compileOnly("com.velocitypowered:velocity-proxy:3.2.0-SNAPSHOT-277")
+    compileOnly("com.velocitypowered:velocity-proxy:3.4.0-SNAPSHOT")
 
     //MySQL
     libby("org.mariadb.jdbc:mariadb-java-client:3.5.7")
@@ -156,7 +156,7 @@ dependencies {
     libby("org.xerial:sqlite-jdbc:3.51.1.0")
 
     //PostgreSQL
-    libby("org.postgresql:postgresql:42.7.8")
+    libby("org.postgresql:postgresql:42.7.9")
 
     //ACF
     libby("co.aikar:acf-velocity:0.5.1-SNAPSHOT")
@@ -201,17 +201,16 @@ dependencies {
     libby("com.github.retrooper:packetevents-bungeecord:2.11.1")
 
     compileOnly("io.netty:netty-transport:4.2.9.Final")
-    compileOnly("com.mojang:datafixerupper:8.0.16") //I hate this so much
-    compileOnly("org.apache.logging.log4j:log4j-core:2.25.2")
+    compileOnly("org.apache.logging.log4j:log4j-core:2.25.3")
 
     //Libby
-    implementation("com.github.MiguVerse.libby:libby-bukkit:2a5d50f04b")
-    implementation("com.github.MiguVerse.libby:libby-velocity:2a5d50f04b")
-    implementation("com.github.MiguVerse.libby:libby-bungee:2a5d50f04b")
-    implementation("com.github.MiguVerse.libby:libby-paper:2a5d50f04b")
+    implementation("com.github.MiguVerse.libby:libby-bukkit:1.7.6")
+    implementation("com.github.MiguVerse.libby:libby-velocity:1.7.6")
+    implementation("com.github.MiguVerse.libby:libby-bungee:1.7.6")
+    implementation("com.github.MiguVerse.libby:libby-paper:1.7.6")
 
     //NanoLimboPlugin
-    compileOnly("com.github.bivashy.NanoLimboPlugin:api:1.0.8") // TODO Need research on why it's not working if we change to something upper than 1.0.8, no breaking changes documented...
+    compileOnly("com.github.bivashy.NanoLimboPlugin:api:1.0.15")
 }
 
 tasks.withType<ProcessResources> {

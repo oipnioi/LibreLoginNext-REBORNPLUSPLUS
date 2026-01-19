@@ -6,7 +6,7 @@
 
 package xyz.miguvt.miguloginnext.api.crypto;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 
 /**
  * This interface manages passwords for its own algorithm. Each algorithm must implement this interface.
