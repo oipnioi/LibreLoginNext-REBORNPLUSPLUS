@@ -39,7 +39,7 @@ tasks.withType<JavaCompile> {
 //        }
 //        github {
 //            token = System.getenv("GITHUB_TOKEN")
-//            repository = "MiguVerse/LibreLoginNext"
+//            repository = "MiguVerse/MiguLoginNext"
 //        }
 //        discord {
 //            webhookUrl = System.getenv("DISCORD_WEBHOOK_URL")
@@ -81,7 +81,7 @@ sourceSets.main {
 }
 
 tasks.withType<ShadowJar> {
-    archiveFileName.set("LibreLoginNext.jar")
+    archiveFileName.set("MiguLoginNext.jar")
 
     dependencies {
         exclude(dependency("org.slf4j:.*:.*"))
@@ -90,20 +90,20 @@ tasks.withType<ShadowJar> {
         exclude(dependency("com.google.protobuf:.*:.*"))
     }
 
-    relocate("co.aikar.acf", "xyz.miguvt.libreloginnext.lib.acf")
-    relocate("com.github.benmanes.caffeine", "xyz.miguvt.libreloginnext.lib.caffeine")
-    relocate("com.typesafe.config", "xyz.miguvt.libreloginnext.lib.hocon")
-    relocate("com.zaxxer.hikari", "xyz.miguvt.libreloginnext.lib.hikari")
-    relocate("org.mariadb", "xyz.miguvt.libreloginnext.lib.mariadb")
-    relocate("org.bstats", "xyz.miguvt.libreloginnext.lib.metrics")
-    relocate("org.intellij", "xyz.miguvt.libreloginnext.lib.intellij")
-    relocate("org.jetbrains", "xyz.miguvt.libreloginnext.lib.jetbrains")
-    relocate("io.leangen.geantyref", "xyz.miguvt.libreloginnext.lib.reflect")
-    relocate("org.spongepowered.configurate", "xyz.miguvt.libreloginnext.lib.configurate")
-    relocate("net.byteflux.libby", "xyz.miguvt.libreloginnext.lib.libby")
-    relocate("org.postgresql", "xyz.miguvt.libreloginnext.lib.postgresql")
-    relocate("com.github.retrooper.packetevents", "xyz.miguvt.libreloginnext.lib.packetevents.api")
-    relocate("io.github.retrooper.packetevents", "xyz.miguvt.libreloginnext.lib.packetevents.platform")
+    relocate("co.aikar.acf", "xyz.miguvt.miguloginnext.lib.acf")
+    relocate("com.github.benmanes.caffeine", "xyz.miguvt.miguloginnext.lib.caffeine")
+    relocate("com.typesafe.config", "xyz.miguvt.miguloginnext.lib.hocon")
+    relocate("com.zaxxer.hikari", "xyz.miguvt.miguloginnext.lib.hikari")
+    relocate("org.mariadb", "xyz.miguvt.miguloginnext.lib.mariadb")
+    relocate("org.bstats", "xyz.miguvt.miguloginnext.lib.metrics")
+    relocate("org.intellij", "xyz.miguvt.miguloginnext.lib.intellij")
+    relocate("org.jetbrains", "xyz.miguvt.miguloginnext.lib.jetbrains")
+    relocate("io.leangen.geantyref", "xyz.miguvt.miguloginnext.lib.reflect")
+    relocate("org.spongepowered.configurate", "xyz.miguvt.miguloginnext.lib.configurate")
+    relocate("net.byteflux.libby", "xyz.miguvt.miguloginnext.lib.libby")
+    relocate("org.postgresql", "xyz.miguvt.miguloginnext.lib.postgresql")
+    relocate("com.github.retrooper.packetevents", "xyz.miguvt.miguloginnext.lib.packetevents.api")
+    relocate("io.github.retrooper.packetevents", "xyz.miguvt.miguloginnext.lib.packetevents.platform")
 }
 
 java {

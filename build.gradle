@@ -8,7 +8,7 @@ version '0.25.2'
 
 subprojects {
     version = rootProject.version
-    group = 'com.github.MiguVerse.LibreLoginNext'
+    group = 'com.github.MiguVerse.MiguLoginNext'
 
     apply plugin: 'org.cadixdev.licenser'
     apply plugin: 'maven-publish'
