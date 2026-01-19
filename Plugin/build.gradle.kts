@@ -204,10 +204,10 @@ dependencies {
     compileOnly("org.apache.logging.log4j:log4j-core:2.25.3")
 
     //Libby
-    implementation("com.github.MiguVerse.libby:libby-bukkit:1.7.6")
-    implementation("com.github.MiguVerse.libby:libby-velocity:1.7.6")
-    implementation("com.github.MiguVerse.libby:libby-bungee:1.7.6")
-    implementation("com.github.MiguVerse.libby:libby-paper:1.7.6")
+    implementation("com.github.MiguVerse.libby:libby-bukkit:2a5d50f04b")
+    implementation("com.github.MiguVerse.libby:libby-velocity:2a5d50f04b")
+    implementation("com.github.MiguVerse.libby:libby-bungee:2a5d50f04b")
+    implementation("com.github.MiguVerse.libby:libby-paper:2a5d50f04b")
 
     //NanoLimboPlugin
     compileOnly("com.github.bivashy.NanoLimboPlugin:api:1.0.15")

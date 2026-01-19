@@ -49,7 +49,7 @@ public class HoconPluginConfiguration {
         String headerComment = migratedFromOldPlugin
                 ? """
                           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                          !! YOUR CONFIG WAS AUTOMATICALLY MIGRATED BY LIBRELOGINNEXT !!
+                          !! YOUR CONFIG WAS AUTOMATICALLY MIGRATED BY MIGULOGINNEXT !!
                           !! CONSIDER REGENERATING THE CONFIG AND RECONFIGURING EVERYTHING !!
                           !! KEEPING THE SAME DATABASE FOR BETTER COMPATIBILITY !!
                           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
