@@ -129,13 +129,13 @@ libby {
 configurations.all {
     // I hate this, but it needs to be done as bungeecord does not support newer versions of adventure, and packetevents includes it
     resolutionStrategy {
-        force("net.kyori:adventure-text-minimessage:4.26.1")
-        force("net.kyori:adventure-text-serializer-gson:4.26.1")
-        force("net.kyori:adventure-text-serializer-legacy:4.26.1")
-        force("net.kyori:adventure-text-serializer-json:4.26.1")
-        force("net.kyori:adventure-api:4.26.1")
-        force("net.kyori:adventure-nbt:4.26.1")
-        force("net.kyori:adventure-key:4.26.1")
+        force("net.kyori:adventure-text-minimessage:4.25.0")
+        force("net.kyori:adventure-text-serializer-gson:4.25.0")
+        force("net.kyori:adventure-text-serializer-legacy:4.25.0")
+        force("net.kyori:adventure-text-serializer-json:4.25.0")
+        force("net.kyori:adventure-api:4.25.0")
+        force("net.kyori:adventure-nbt:4.25.0")
+        force("net.kyori:adventure-key:4.25.0")
     }
 }
 
