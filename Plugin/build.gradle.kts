@@ -5,7 +5,7 @@ plugins {
     id("com.gradleup.shadow") version "9.3.1"
     id("net.kyori.blossom").version("2.2.0")
     id("java-library")
-    id("xyz.miguvt.libby.plugin").version("1.2.3")
+    id("xyz.miguvt.libby.plugin").version("1.2.8")
     //id("xyz.kyngs.mcupload.plugin").version("0.3.4")
 }
 
@@ -124,6 +124,11 @@ libby {
 
     // Often redeploys the same version, so calculating checksum causes false flags
     noChecksumDependency("com.github.retrooper.packetevents:.*:.*")
+
+    // Paper loader generation configuration
+    generatePaperLoader = true         // set false to skip; null = auto-detect Paper
+    loaderClassName = "GeneratedLibbyLoader"
+    updatePaperPluginYml = true        // set false to avoid touching paper-plugin.yml
 }
 
 configurations.all {

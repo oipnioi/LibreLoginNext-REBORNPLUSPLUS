@@ -6,9 +6,6 @@
 
 package xyz.miguvt.miguloginnext.paper;
 
-import net.byteflux.libby.BukkitLibraryManager;
-import net.byteflux.libby.LibraryManager;
-import net.byteflux.libby.PaperLibraryManager;
 import xyz.miguvt.miguloginnext.api.provider.MiguLoginNextProvider;
 import xyz.miguvt.miguloginnext.api.util.SemanticVersion;
 
@@ -46,23 +43,8 @@ public class PaperBootstrap extends JavaPlugin implements MiguLoginNextProvider<
 
         getLogger().info("Detected Adventure-compatible server distribution - " + getServer().getName() + " " + getServer().getVersion());
 
-        LibraryManager libraryManager;
-
-        try {
-            Class.forName("io.papermc.paper.plugin.entrypoint.classloader.PaperPluginClassLoader");
-            libraryManager = new PaperLibraryManager(this);
-        } catch (ClassNotFoundException e) {
-            libraryManager = new BukkitLibraryManager(this);
-        }
-
-        getSLF4JLogger().info("Loading libraries...");
-
-        try {
-            libraryManager.configureFromJSON();
-        } catch (Exception e) {
-            getSLF4JLogger().error("Failed to load libraries, stopping server to prevent damage", e);
-            stopServer();
-        }
+        // Libraries are now loaded automatically by GeneratedLibbyLoader during plugin initialization
+        // No need for manual libby configuration here anymore
 
         libreLoginNext = new PaperMiguLoginNext(this);
     }

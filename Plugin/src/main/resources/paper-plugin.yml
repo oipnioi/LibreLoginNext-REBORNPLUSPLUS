@@ -15,3 +15,5 @@ dependencies:
     LuckPerms:
       load: "BEFORE"
       required: false
+
+loader: com.github.MiguVerse.MiguLoginNext.GeneratedLibbyLoader
