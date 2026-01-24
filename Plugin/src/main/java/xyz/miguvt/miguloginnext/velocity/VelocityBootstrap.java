@@ -19,7 +19,6 @@ import com.velocitypowered.api.plugin.PluginDescription;
 import com.velocitypowered.api.proxy.Player;
 import com.velocitypowered.api.proxy.ProxyServer;
 import com.velocitypowered.api.proxy.server.RegisteredServer;
-import io.github.retrooper.packetevents.velocity.factory.VelocityPacketEventsBuilder;
 import net.byteflux.libby.VelocityLibraryManager;
 import xyz.miguvt.miguloginnext.api.MiguLoginNextPlugin;
 import xyz.miguvt.miguloginnext.api.provider.MiguLoginNextProvider;
