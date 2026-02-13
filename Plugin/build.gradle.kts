@@ -154,27 +154,27 @@ dependencies {
     compileOnly("com.velocitypowered:velocity-proxy:3.4.0-SNAPSHOT")
 
     //MySQL
-    libby("org.mariadb.jdbc:mariadb-java-client:3.5.7")
-    libby("com.zaxxer:HikariCP:7.0.2")
+    implementation("org.mariadb.jdbc:mariadb-java-client:3.5.7")
+    implementation("com.zaxxer:HikariCP:7.0.2")
 
     //SQLite
-    libby("org.xerial:sqlite-jdbc:3.51.1.0")
+    implementation("org.xerial:sqlite-jdbc:3.51.1.0")
 
     //PostgreSQL
-    libby("org.postgresql:postgresql:42.7.9")
+    implementation("org.postgresql:postgresql:42.7.9")
 
     //ACF
-    libby("co.aikar:acf-velocity:0.5.1-SNAPSHOT")
+    implementation("co.aikar:acf-velocity:0.5.1-SNAPSHOT")
     libby("co.aikar:acf-bungee:0.5.1-SNAPSHOT")
     libby("co.aikar:acf-paper:0.5.1-SNAPSHOT")
 
     //Utils
-    libby("com.github.ben-manes.caffeine:caffeine:3.2.3")
-    libby("org.spongepowered:configurate-hocon:4.2.0")
-    libby("at.favre.lib:bcrypt:0.10.2")
-    libby("dev.samstevens.totp:totp:1.7.1")
-    libby("org.bouncycastle:bcprov-jdk18on:1.83")
-    libby("org.apache.commons:commons-email:1.6.0")
+    implementation("com.github.ben-manes.caffeine:caffeine:3.2.3")
+    implementation("org.spongepowered:configurate-hocon:4.2.0")
+    implementation("at.favre.lib:bcrypt:0.10.2")
+    implementation("dev.samstevens.totp:totp:1.7.1")
+    implementation("org.bouncycastle:bcprov-jdk18on:1.83")
+    implementation("org.apache.commons:commons-email:1.6.0")
     // DO NOT UPGRADE TO 4.15.0 OR ABOVE BEFORE TESTING WATERFALL AND BUNGEECORD COMPATIBILITY!!!
     libby("net.kyori:adventure-text-minimessage:4.14.0")
     libby("com.github.kyngs:LegacyMessage:0.2.0")
@@ -192,7 +192,7 @@ dependencies {
     libby("net.kyori:adventure-platform-bungeecord:4.4.1")
 
     //BStats
-    libby("org.bstats:bstats-velocity:3.1.0")
+    implementation("org.bstats:bstats-velocity:3.1.0")
     libby("org.bstats:bstats-bungeecord:3.1.0")
     libby("org.bstats:bstats-bukkit:3.1.0")
 
@@ -202,8 +202,8 @@ dependencies {
     libby("com.github.retrooper:packetevents-spigot:2.11.1")
 
     //PacketEvents for Velocity and BungeeCord
-    libby("com.github.retrooper:packetevents-velocity:2.11.1")
-    libby("com.github.retrooper:packetevents-bungeecord:2.11.1")
+    implementation("com.github.retrooper:packetevents-velocity:2.11.1")
+    implementation("com.github.retrooper:packetevents-bungeecord:2.11.1") 
 
     compileOnly("io.netty:netty-transport:4.2.9.Final")
     compileOnly("org.apache.logging.log4j:log4j-core:2.25.3")
