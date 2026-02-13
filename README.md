@@ -5,34 +5,15 @@ This is a next-generation version of [LibreLogin](https://github.com/kyngs/Libre
 
 # Download Links
 
-<a href="https://modrinth.com/plugin/miguloginnext">
-  <img alt="modrinth" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg">
-</a>
-
-<a href="https://www.spigotmc.org/resources/miguloginnext.131713/">
-  <img alt="spigot" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/spigot_vector.svg">
-</a>
 
 <a href="https://github.com/MiguVerse/MiguLoginNext/releases/latest/download/MiguLoginNext.jar">
   <img alt="github" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/github_vector.svg">
 </a>
 
-<a href="https://builtbybit.com/resources/miguloginnext.89393/">
-  <img alt="builtbybit" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/builtbybit_vector.svg">
-</a>
 
 # Quick information
 
-<img alt="Plugin requires Java 17 or newer" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/built-with/java17_vector.svg">
-
-<a href="https://github.com/MiguVerse/MiguLoginNext/wiki">
-<img src="https://img.shields.io/badge/Documentation-555555?style=for-the-badge&logo=wikipedia" alt="Documentation on the Wiki">
-</a>
-
-<a href="https://github.com/MiguVerse/MiguLoginNext/graphs/contributors">
-<img src="https://img.shields.io/badge/Contributors-Credits-blue?style=for-the-badge" 
-alt="Contributors listed">
-</a>
+use the fucking java 21
 
 ## Basic set of features
 
